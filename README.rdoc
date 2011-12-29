@@ -1,0 +1,13 @@
+Lumberjack Heroku Device
+
+This gem provides a logging device for the Lumberjack gem that will log to Heroku's logging system. See http://devcenter.heroku.com/articles/logging for more information on Heroku's logging system.
+
+== Example Usage
+
+  require 'lumberjack_heroku_device'
+
+  device = Lumberjack::HerokuDevice.new
+  logger = Lumberjack::Logger.new(device)
+  logger.info("Write me to syslog!")
+
+See HerokuDevice for more details.
