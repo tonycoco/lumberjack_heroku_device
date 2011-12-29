@@ -12,3 +12,19 @@ module Lumberjack
     end
   end
 end
+
+# Monkey patch Rails::Rack::LogTailer
+module Rails
+  module Rack
+    class LogTailer
+      def initialize(app, log = nil)
+      end
+
+      def call(env)
+      end
+
+      def tail!
+      end
+    end
+  end
+end
