@@ -28,7 +28,7 @@ module Rails
       end
 
       def tail!
-        $stdout.print "Testing... 1. 2. 3."
+        $stdout
       end
     end
   end
