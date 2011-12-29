@@ -8,6 +8,6 @@ This gem provides a logging device for the Lumberjack gem that will log to Herok
 
   device = Lumberjack::HerokuDevice.new
   logger = Lumberjack::Logger.new(device)
-  logger.info("Write me to syslog!")
+  logger.info("Write me to Heroku's logging system!")
 
 See HerokuDevice for more details.
